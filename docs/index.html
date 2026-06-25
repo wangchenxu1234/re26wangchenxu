@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re26wangchenxu GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .info-box {
+            border: 2px solid #3498db;
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World from re26wangchenxu</h1>
+    <div class="info-box">
+        <p>Repository Name: re26wangchenxu</p>
+        <p>Generated Date: <span id="date"></span></p>
+        <p>Random Counter: <span id="counter">0</span></p>
+    </div>
+
+    <script>
+        // 填充当前日期
+        document.getElementById("date").innerText = new Date().toLocaleString();
+        
+        // 自动计时器
+        let count = 0;
+        setInterval(() => {
+            count += 1;
+            document.getElementById("counter").innerText = count;
+        }, 1000);
+    </script>
+</body>
+</html>
